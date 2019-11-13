@@ -52,6 +52,7 @@ h1 {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    padding: 0 40px;
    
 }
 
@@ -66,6 +67,11 @@ h1 {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    padding: 0 40px;
+}
+
+#item2 a:hover {
+    color: rgb(141, 141, 141);
 }
 
 #item3 a:link, a:visited {
@@ -75,6 +81,11 @@ h1 {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    padding: 0 40px;
+}
+
+#item3 a:hover {
+    color: rgb(141, 141, 141);
 }
 
 
