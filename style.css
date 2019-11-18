@@ -4,6 +4,7 @@ body {
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 h1 {
@@ -24,14 +25,19 @@ h1 {
 }
 
 #topdiv {
-    padding: 0;
+    display: inline-block;
+    width: 100%;           
+    position: relative;
     height: 100px;
-    background-color: rgb(255, 255, 255);
+    resize: both;
 }
 
 #seconddiv {
-    background-color: rgb(163, 154, 85);
+    background-color: rgb(190, 176, 64);
     height: 500px;
+    width: 100vw;
+    right: 0px;
+    display: block;
 }
 
 #top-links {
