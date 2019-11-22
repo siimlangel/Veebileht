@@ -45,7 +45,7 @@ function draw() {
     flowfield = new Array(rows * cols);
     background(255, 50);
     
-    paranormal(mouseX, mouseY, 600);
+    
       
     
 
