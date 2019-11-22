@@ -19,7 +19,7 @@ function setup() {
     pixelDensity(1);
     canvas = createCanvas(window.innerWidth, screen_Height);
     canvas.position(0, 0);
-    canvas.style('z-index', '-1');
+    canvas.style('z-index', '-2');
 
     for (let i = 0; i < 1000; i++) {
         particles.push(new Particle(createVector(random(width), random(height)), random(0.05, 1), 0));
