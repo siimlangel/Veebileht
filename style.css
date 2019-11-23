@@ -85,9 +85,9 @@ h1 {
     height: 0%;
     background: #75757569;
     bottom: 0;
-    border: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
     z-index: -1;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 
@@ -96,7 +96,7 @@ h1 {
 }
 
 .links-table-item:hover::before {
-    height: 190%;
+    height: 50%;
 }
 
 .carousel-container {
