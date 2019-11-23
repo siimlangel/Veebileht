@@ -15,7 +15,13 @@ h1 {
     position: absolute;
     top: 15px;
     left: 100px;
+    font-size: 25px;  
+}
+
+h2 {
+    color: rgb(48, 48, 48);
     font-size: 25px;
+    padding: 10px;
     
 }
 
@@ -50,8 +56,6 @@ h1 {
     z-index: -1;
 }
 
-
-
 .left-links-table {
     border-spacing: 0 20px;
     margin-left: 40px;
@@ -75,8 +79,6 @@ h1 {
     overflow: hidden;
 }
 
-
-
 .links-table-item::before {
     content: "";
     position: absolute;
@@ -89,7 +91,6 @@ h1 {
     z-index: -1;
     transition: 0.4s;
 }
-
 
 .links-table-item:hover {
     transform: scale(1.1);
@@ -156,4 +157,15 @@ h1 {
 
 .row{
     display: flex;
+}
+
+.column{
+    padding: 10px;
+}
+
+td, th{
+border: 0.8px solid black;
+}
+table{
+    border: 2.5px solid black;
 }
