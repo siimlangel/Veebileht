@@ -5,17 +5,18 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1 {
-    color: rgb(116, 109, 54);
+    color: rgb(48, 48, 48);
     position: absolute;
     top: 15px;
     left: 100px;
-    font-weight: bolder;
     font-size: 25px;
+    
 }
 
 #logo {
@@ -32,6 +33,23 @@ h1 {
     height: 100px;
     resize: both;
 }
+.table-label {
+    border: 1px solid #74747400;
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.table-label::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 85%;
+    height: 20%;
+    background: #97979769;
+    bottom: 0;
+    z-index: -1;
+}
 
 
 
@@ -39,7 +57,7 @@ h1 {
     border-spacing: 0 20px;
     margin-left: 40px;
     text-align: right;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -53,7 +71,7 @@ h1 {
     border-radius: 20px;
     background: none;
     padding: 10px 20px;
-    transition: 0.8s;
+    transition: 0.4s;
     position: relative;
     overflow: hidden;
 }
@@ -74,6 +92,9 @@ h1 {
 }
 
 
+.links-table-item:hover {
+    transform: scale(1.1);
+}
 
 .links-table-item:hover::before {
     height: 190%;
