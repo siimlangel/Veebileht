@@ -6,7 +6,7 @@
     <title>Pealkiri</title>
     <meta name="description" content="SuperMegaVeebileht">
     <meta name="author" content="Siim, Markus, Danver">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <script src="p5.min.js"></script>
@@ -51,7 +51,22 @@
 
     </div>
 
-    <!--<div id="seconddiv"></div>-->
+    <div class="carousel-container">
+            <i class="fas fa-arrow-circle-right" id="nextBtn"></i>
+            <i class="fas fa-arrow-circle-left" id="prevBtn"></i>
+        <div class="carousel-slide">
+            <img src="images/Tennis.png" id="lastClone" alt="">
+            <img src="images/pingpong.png" alt="">
+            <img src="images/squash.png" alt="">
+            <img src="images/sulgpall.png" alt="">
+            <img src="images/Tennis.png" alt="">
+            <img src="images/pingpong.png" id="firstClone" alt="">
+        </div>
+    </div>
+    
+
+    <script src="slider.js"></script>
+    
 </body>
 
 </html>
