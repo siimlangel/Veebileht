@@ -101,14 +101,14 @@ h2 {
 }
 
 .carousel-container {
-    width: 259px;
-    margin: auto;
+    width: 550px;
+    height: 370px;
     overflow: hidden;
     position: relative;
 }
 .carousel-slide img {
-    height: 300px;
-    width: 259px;
+    height: 370px;
+    width: 550px;
 }
 
 .carousel-slide {
@@ -151,7 +151,7 @@ h2 {
 }
 
 #tennisepilt {
-    width: 600px;
+    width: 550px;
     height: 370px;
 }
 
