@@ -5,11 +5,50 @@
         <meta charset="utf-8">
         <title>Sulgpall</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
         <script src="p5.min.js"></script>
         <script src="rename_this.js"></script>
     </head>
-    <div class="heading">
-        <h1>Sulgpall</h1>
-        <a href="Base.html"><img id="logo" src="images/logo2.png" alt="logo"></a>
-    </div>
+    <body>
+        <div class="heading">
+            <h1>Sulgpall</h1>
+            <a href="Base.html"><img id="logo" src="images/logo2.png" alt="logo"></a>
+        </div>
+        <h2>A.Le Coq Spordihoone</h2>
+        <div class="row">
+            <div class="column">
+                <div class="carousel-container">
+                    <i class="fas fa-arrow-circle-right" id="nextBtn"></i>
+                    <i class="fas fa-arrow-circle-left" id="prevBtn"></i>
+                    <div class="carousel-slide">
+                        <img src="images/alecoq.jpg" id="lastClone" alt="">
+                        <img src="images/alecoq1.jpg" alt="">
+                        <img src="images/alecoq.jpg" alt="">
+                        <img src="images/alecoq1.jpg" id="firstClone" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <p>A.Le Coq Spordihoones on võimalik mängida sulgpalli viiel erineval väljakul.
+                </p>
+                <p>Talvine hinnakiri:</p>
+                <table>
+                    <tr>
+                        <th>Hinnakiri</th>
+                        <th>Nooruk</th>
+                        <th>Tavaklient</th>
+                    </tr>
+                    <tr>
+                        <td>E-R 08-23</td>
+                        <td>6€</td>
+                        <td>7€</td>
+                    </tr>
+                    
+                </table>
+                <a class="broneering" href="https://www.veerikusport.ee/">Broneeri aeg</a>
+            </div>
+        </div>
+        <script src="slider.js"></script>
+    </body>
 </html>
