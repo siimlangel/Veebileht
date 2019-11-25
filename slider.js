@@ -1,6 +1,5 @@
 
 
-
 class Slider {
     constructor(carouselSlide, carouselImages, prevBtn, nextBtn, counter) {
         this.carouselSlide = carouselSlide;
