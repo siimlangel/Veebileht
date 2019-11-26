@@ -212,8 +212,7 @@ h2 {
 .broneering{
     color: black;
     text-decoration: none;
-    border: 1px solid #367c8d;
-    border-radius: 20px;
+    border: 2px solid rgba(63, 63, 63, 0.637);;
     background: none;
     padding: 10px 20px;
     transition: 0.3s;
@@ -231,6 +230,7 @@ h2 {
 
 .broneering:hover {
     transform: scale(1.1);
+    border-color: #22535f;
 }
 
 
@@ -249,4 +249,75 @@ h2 {
 
 .broneering:hover::before {
     height: 50%;
+}
+
+
+.dropdown {
+    background: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    right: 100px;
+}
+
+.products {
+    position: relative;
+}
+.projects ul {
+    position: absolute;
+    background: rgba(53, 145, 173, 0);
+    left: -60px;
+    height: auto;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    
+}
+
+.projects a{
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.dropdown button i {
+    color: rgb(70, 70, 70);
+    transform: scale(3);
+}
+
+
+.projects li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects li:hover {
+    
+    transition: 1s;
+    background-color: rgba(58, 175, 160, 0.432);
+}
+
+
+.projects button:focus {
+    outline: 0;
+}
+
+.projects button i {
+    transition: 0.4s;
 }
