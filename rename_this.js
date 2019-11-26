@@ -45,7 +45,7 @@ function draw() {
     rows = floor(width/scl) + 1;
     cols = floor(height/scl) + 1;
     flowfield = new Array(rows * cols);
-    background(255, 50);
+    background(240, 50);
     
       
     

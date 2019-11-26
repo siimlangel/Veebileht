@@ -8,7 +8,7 @@ class Slideshow {
         this.images = slide.children;
         this.counter = counter;
         this.size = images[0].clientWidth;
-        this.interval = 3000;
+        this.interval = 5000;
     }
 
     // Liiguta slide edasi iga interval ms tagant paremale
@@ -55,6 +55,7 @@ class Slideshow {
         // Kui jõuab viimase pildini siis pane counter tagasi essa pici peale
         // Kui jõuab essani siis liiguta viimase pici peale
         this.slide.addEventListener('transitionend', () => {
+            if(this.counter < 0) this.counter = 0;
     
             if (this.images[this.counter].id === 'lastClone') {
                 this.slide.style.transition = "none";
