@@ -10,6 +10,7 @@ class Slider {
         this.size = carouselImages[0].clientWidth;
     }
 
+
     show() {
 
         // Liigutab pildi nähtavale
@@ -67,5 +68,6 @@ for (let i = 0; i < carouselSlides.length; i++) {
 // Paneb kõik sliderid tööle
 for (const slider of sliders) {
     slider.show();
+    
 }
 
