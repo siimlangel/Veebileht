@@ -5,10 +5,10 @@
 <head>
     <meta charset="utf-8">
     <title>Squash</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4z
-    FAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/sidestyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <script src="js/p5.min.js"></script>
     <script src="js/rename_this.js"></script>
 </head>
@@ -17,8 +17,26 @@
     <div class="heading">
         <h1>Squash</h1>
         <a href="Base.html"><img id="logo" src="images/logo2.png" alt="logo"></a>
+        <div class="top-links-container">
+            <div class="top-link"><a href="Base.html">Main</a></div>
+            <div class="top-link"><a href="Ping-pong.html">Lauatennis</a></div>
+            <div class="top-link"><a href="Sulgpall.html">Sulgpall</a></div>
+            <div class="top-link"><a href="Tennis.html">Tennis</a></div>
+        </div>
     </div>
-
+    <nav>
+        <div class="dropdown">
+            <div class="projects">
+                <button><i class="fas fa-grip-lines"></i></button>
+                <ul>
+                    <li><a href="Base.html">Main</a></li>
+                    <li><a href="Ping-pong.html">Ping-pong</a></li>
+                    <li><a href="Sulgpall.html">Sulgpall</a></li>
+                    <li><a href="Tennis.html">Tennis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <h2>Ihaste spordihall</h2>
     <div class="row">
         <div class="column">
@@ -58,6 +76,7 @@
 
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 
 </html>
