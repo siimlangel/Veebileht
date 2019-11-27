@@ -163,12 +163,12 @@ h2 {
     top: 45%;
     left: 3%;
     z-index: 10;
-    color: #00000044;
+    color: #f7fdff98;
     transition: 0.2s;
 }
 
 #prevBtn:hover {
-    color: #5c9fb398;
+    color: #60c0dd98;
     cursor: pointer;
     transform: scale(1.2);
 }
@@ -179,12 +179,12 @@ h2 {
     top: 45%;
     z-index: 10;
     right: 3%;
-    color: #00000044;
+    color: #f7fdff98;
     transition: 0.2s;
 }
 
 #nextBtn:hover {
-    color: #5c9fb398;
+    color: #60c0dd98;
     cursor: pointer;
     transform: scale(1.2);
 }
