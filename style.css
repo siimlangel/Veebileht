@@ -202,6 +202,7 @@ h2 {
 
 .row table {
     border: 2.5px solid black;
+    border-collapse: collapse;
 }
 
 .column{
