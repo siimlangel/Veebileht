@@ -88,6 +88,7 @@ h2 {
 
 .top-link{
     border: 2px solid rgba(63, 63, 63, 0.637);
+    border-radius: 3px;
     background: none;
     padding: 10px 20px;
     transition: 0.4s;
@@ -202,6 +203,8 @@ h2 {
 
 .row table {
     border: 2.5px solid black;
+    border-radius: 3px;
+    border-spacing: 0;
 }
 
 .column{
@@ -213,6 +216,7 @@ h2 {
     color: black;
     text-decoration: none;
     border: 2px solid rgba(63, 63, 63, 0.637);;
+    border-radius: 3px;
     background: none;
     padding: 10px 20px;
     transition: 0.3s;
