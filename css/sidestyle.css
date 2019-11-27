@@ -1,0 +1,60 @@
+.row{
+    display: flex;
+}
+.row td, th {
+    border: 0.8px solid black;
+}
+
+.row table {
+    border: 2.5px solid black;
+    border-radius: 3px;
+    border-spacing: 0;
+}
+
+.column{
+    padding: 10px;
+}
+
+
+.broneering{
+    color: black;
+    text-decoration: none;
+    border: 2px solid rgba(63, 63, 63, 0.637);;
+    border-radius: 3px;
+    background: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    top: 20px;
+    display: inline-block;
+    
+}
+
+.broneering a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.broneering:hover {
+    transform: scale(1.1);
+    border-color: #22535f;
+}
+
+
+.broneering::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background:  #5c9fb398;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.broneering:hover::before {
+    height: 50%;
+}
