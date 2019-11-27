@@ -292,6 +292,16 @@ h2 {
     text-decoration: none;
 }
 
+.dropdown a{
+    color: #22535f;
+}
+
+.projects ul {
+    background: white;
+    border: 3px white;
+    border-radius: 3px;
+}
+
 .dropdown button {
     background: none;
     border: none;
