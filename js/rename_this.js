@@ -47,7 +47,7 @@ function draw() {
     flowfield = new Array(rows * cols);
     background(240, 50);
     
-      
+    //paranormal(mouseX, mouseY, 100);
     
 
     noFill();
@@ -103,7 +103,7 @@ class Particle {
     show() {
         push();
         stroke(this.hue);
-        strokeWeight(0.4);
+        strokeWeight(0.5);
         line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
         pop();
         this.updatePos();
