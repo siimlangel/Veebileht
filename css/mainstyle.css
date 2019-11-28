@@ -4,9 +4,8 @@ body {
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -51,6 +50,15 @@ h2 {
     background: rgba(170, 170, 170, 0.322)
 }
 
+.heading::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 4%;
+    bottom: 30%;
+    left: 100px;
+    background: rgba(50, 162, 177, 0.521)
+}
 
 .top-links-container {
     display: flex;
@@ -256,11 +264,3 @@ h2 {
 .projects button i {
     transition: 0.4s;
 }
-
-
-
-/*
-    Side
-*/
-
-
