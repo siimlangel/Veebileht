@@ -36,13 +36,14 @@ class Slider {
         // Kui jõuab viimase pildini siis pane counter tagasi essa pici peale
         // Kui jõuab essani siis liiguta viimase pici peale
         this.carouselSlide.addEventListener('transitionend', () => {
-            if (this.carouselImages[this.counter].id === 'lastClone') {
+            
+            if (this.carouselImages[this.counter].className === 'lastClone') {
                 this.carouselSlide.style.transition = "none";
                 this.counter = this.carouselImages.length - 2;
                 this.carouselSlide.style.transform = 'translateX(' + (-this.size * this.counter) + 'px)';
             }
         
-            if (this.carouselImages[this.counter].id === 'firstClone') {
+            if (this.carouselImages[this.counter].className === 'firstClone') {
                 this.carouselSlide.style.transition = "none";
                 this.counter = this.carouselImages.length - this.counter;
                 this.carouselSlide.style.transform = 'translateX(' + (-this.size * this.counter) + 'px)';
@@ -54,20 +55,18 @@ class Slider {
 
 // Võtab kõik sliderid docist ja kõik nupud 
 const carouselSlides = document.querySelectorAll('.carousel-slide');
-const prevBtns = document.querySelectorAll('#prevBtn');
-const nextBtns = document.querySelectorAll('#nextBtn');
+const prevBtns = document.querySelectorAll('.prevBtn');
+const nextBtns = document.querySelectorAll('.nextBtn');
 
 const sliders = [];
 
 // Instanciateb iga slideri
 for (let i = 0; i < carouselSlides.length; i++) {
     sliders.push(new Slider(carouselSlides[i], carouselSlides[i].children, prevBtns[i], nextBtns[i], 1));
-    
 }
 
 // Paneb kõik sliderid tööle
 for (const slider of sliders) {
     slider.show();
-    
 }
 

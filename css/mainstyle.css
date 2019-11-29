@@ -177,7 +177,7 @@ h2 {
     position: relative;
 }
 
-#prevBtn {
+.prevBtn {
     position: absolute;
     font-size: 30px;
     top: 45%;
@@ -187,13 +187,13 @@ h2 {
     transition: 0.2s;
 }
 
-#prevBtn:hover {
+.prevBtn:hover {
     color: #60c0dd98;
     cursor: pointer;
     transform: scale(1.2);
 }
 
-#nextBtn {
+.nextBtn {
     position: absolute;
     font-size: 30px;
     top: 45%;
@@ -203,7 +203,7 @@ h2 {
     transition: 0.2s;
 }
 
-#nextBtn:hover {
+.nextBtn:hover {
     color: #60c0dd98;
     cursor: pointer;
     transform: scale(1.2);
@@ -255,6 +255,7 @@ h2 {
 }
 
 .projects ul {
+    z-index: 10;
     background: rgb(255, 255, 255);
     border: 3px;
     border-radius: 3px;

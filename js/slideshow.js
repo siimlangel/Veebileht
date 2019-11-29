@@ -57,13 +57,13 @@ class Slideshow {
         this.slide.addEventListener('transitionend', () => {
             if(this.counter < 0) this.counter = 0;
     
-            if (this.images[this.counter].id === 'lastClone') {
+            if (this.images[this.counter].className === 'lastClone') {
                 this.slide.style.transition = "none";
                 this.counter = this.images.length - 2;
                 this.slide.style.transform = 'translateX(' + (-this.size * this.counter) + 'px)';
             }
         
-            if (this.images[this.counter].id === 'firstClone') {
+            if (this.images[this.counter].className === 'firstClone') {
                 this.slide.style.transition = "none";
                 this.counter = this.images.length - this.counter;
                 this.slide.style.transform = 'translateX(' + (-this.size * this.counter) + 'px)';

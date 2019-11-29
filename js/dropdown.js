@@ -8,7 +8,7 @@ const btn = dropdown.children[0].children[0];
 const ul = dropdown.children[0].children[1];
 
 let clicked = 1;
-console.log(btn.children[0]);
+
 
 function changeBool(x) {
     return x % 2;
@@ -16,7 +16,7 @@ function changeBool(x) {
 
 // Ava ja sulge dropdown vajutuse peale
 btn.addEventListener('click', () => {
-    if (changeBool(clicked) == 1){
+    if (changeBool(clicked) == 1) {
         ul.style.pointerEvents = "all";
         ul.style.opacity = 1;
         btn.children[0].style.transform = "scale(4.5)";
@@ -25,10 +25,10 @@ btn.addEventListener('click', () => {
         ul.style.opacity = 0;
         btn.children[0].style.transform = "scale(3)";
     }
-    
-    
+
+
     clicked++;
-    
+
 });
 
 // On window open asenda nupud dropdowniga ja vastupidid olenevalt kui suur
@@ -69,7 +69,3 @@ window.addEventListener("resize", () => {
         }
     }
 });
-
-
-
-
